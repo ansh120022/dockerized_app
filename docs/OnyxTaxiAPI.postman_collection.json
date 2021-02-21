@@ -1,0 +1,442 @@
+{
+	"id": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+	"name": "OnyxTaxiAPI",
+	"description": "Коллекция методов, реализованных в приложении",
+	"order": [],
+	"folders": [
+		{
+			"name": "Clients",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"order": [
+				"c46ca15d-765e-b505-231c-cfe6660ce772",
+				"5f7d7bf6-e386-2c8b-98b5-355f9ac10073",
+				"f13fea50-abe9-cf85-c5b8-01dc65e11a6e",
+				"2f2f39c3-a1a5-9396-fb8c-5baa056ccf8e"
+			],
+			"owner": "7800093",
+			"folders_order": [],
+			"id": "8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47"
+		},
+		{
+			"name": "Drivers",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"order": [
+				"a171c6b2-92cb-87d1-aea1-11e3f1925ca8",
+				"6a3c82af-17f4-9e81-7cbf-9c4d4fb9fd0d",
+				"34264ab2-cccb-f57d-82fe-d41e9a7a211f",
+				"ef3909f5-bd46-c546-8846-bc6928eff3aa"
+			],
+			"owner": "7800093",
+			"folders_order": [],
+			"id": "5ab05b90-6734-daef-2af5-cb5056defd31"
+		},
+		{
+			"name": "Orders",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"order": [
+				"7f203024-c729-f568-696c-3a729300b816",
+				"8e35ffed-48d7-9214-11ab-ac6cb0a3e2ad",
+				"b413db23-aa1e-9aa3-7b47-af97ae63f3e9"
+			],
+			"owner": "7800093",
+			"folders_order": [],
+			"id": "c05e6b2c-4a40-0dd9-f50e-f670c3f4c3c3"
+		}
+	],
+	"folders_order": [
+		"5ab05b90-6734-daef-2af5-cb5056defd31",
+		"8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47",
+		"c05e6b2c-4a40-0dd9-f50e-f670c3f4c3c3"
+	],
+	"timestamp": 1609619683002,
+	"owner": "7800093",
+	"public": false,
+	"requests": [
+		{
+			"id": "2f2f39c3-a1a5-9396-fb8c-5baa056ccf8e",
+			"headers": "Content-Type: application/json\n//clientId: 4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "clientId",
+					"value": "4",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/clients/4",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Удалить клиента из базы",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609626528377,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47",
+			"rawModeData": ""
+		},
+		{
+			"id": "34264ab2-cccb-f57d-82fe-d41e9a7a211f",
+			"headers": "Content-Type: application/json\nDriverID: 8\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DriverID",
+					"value": "8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/drivers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "params",
+			"name": "Поиск водителя по ID",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609620309980,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "34264ab2-cccb-f57d-82fe-d41e9a7a211f",
+			"folder": "5ab05b90-6734-daef-2af5-cb5056defd31"
+		},
+		{
+			"id": "5f7d7bf6-e386-2c8b-98b5-355f9ac10073",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/clients",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Обновить клиента по имени",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609624433410,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47",
+			"rawModeData": "{\r\n  \"name\": \"Пассажирский Пассажир\",\r\n  \"is_vip\": false\r\n}"
+		},
+		{
+			"id": "6a3c82af-17f4-9e81-7cbf-9c4d4fb9fd0d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/drivers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Пересоздать водителя",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609619733724,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "6a3c82af-17f4-9e81-7cbf-9c4d4fb9fd0d",
+			"folder": "5ab05b90-6734-daef-2af5-cb5056defd31",
+			"rawModeData": "{\r\n  \"name\": \"Андронников Виталий\",\r\n  \"car\": \"Toyota Camry2\"\r\n}"
+		},
+		{
+			"id": "7f203024-c729-f568-696c-3a729300b816",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/orders",
+			"folder": "c05e6b2c-4a40-0dd9-f50e-f670c3f4c3c3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1609672938121,
+			"name": "Добавить новый заказ",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"responses": [],
+			"rawModeData": "{\r\n  \"client_id\": 1,\r\n  \"driver_id\": 1,\r\n  \"status\": \"not_accepted\",\r\n  \"address_from\": \"string\",\r\n  \"address_to\": \"string\"\r\n}"
+		},
+		{
+			"id": "8e35ffed-48d7-9214-11ab-ac6cb0a3e2ad",
+			"headers": "Content-Type: application/json\norderId: 1\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "orderId",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/orders",
+			"folder": "c05e6b2c-4a40-0dd9-f50e-f670c3f4c3c3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1609629029242,
+			"name": "Найти заказ",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"responses": [],
+			"rawModeData": "{\r\n  \"client_id\":1,\r\n  \"driver_id\": 1,\r\n  \"date_created\": \"2021-01-02T22:37:31:611Z\",\r\n  \"status\": \"not_accepted\",\r\n  \"address_from\": \"string\",\r\n  \"address_to\": \"string\"\r\n}"
+		},
+		{
+			"id": "a171c6b2-92cb-87d1-aea1-11e3f1925ca8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/drivers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Добавить водителя",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609619717714,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "a171c6b2-92cb-87d1-aea1-11e3f1925ca8",
+			"folder": "5ab05b90-6734-daef-2af5-cb5056defd31",
+			"rawModeData": "{\r\n  \"name\": \"Андронников Виталий\",\r\n  \"car\": \"Toyota Camry\"\r\n}"
+		},
+		{
+			"id": "b413db23-aa1e-9aa3-7b47-af97ae63f3e9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/orders/1",
+			"folder": "c05e6b2c-4a40-0dd9-f50e-f670c3f4c3c3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1609679569010,
+			"name": "Изменить заказ",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"responses": [],
+			"rawModeData": "{\r\n  \"client_id\": 1,\r\n  \"driver_id\": 1,\r\n  \"status\": \"cancelled\",\r\n  \"address_from\": \"string\",\r\n  \"address_to\": \"string\"\r\n}"
+		},
+		{
+			"id": "c46ca15d-765e-b505-231c-cfe6660ce772",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/clients",
+			"folder": "8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1609943663954,
+			"name": "Добавить клиента",
+			"description": "",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"responses": [],
+			"rawModeData": "{\r\n  \"name\": \"Пассажирский2\",\r\n  \"is_vip\": true\r\n}"
+		},
+		{
+			"id": "ef3909f5-bd46-c546-8846-bc6928eff3aa",
+			"headers": "Content-Type: application/json\nDriverID: 8\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "DriverID",
+					"value": "8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/drivers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "params",
+			"name": "Удаление водителя по ID",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609620653232,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "ef3909f5-bd46-c546-8846-bc6928eff3aa",
+			"folder": "5ab05b90-6734-daef-2af5-cb5056defd31"
+		},
+		{
+			"id": "f13fea50-abe9-cf85-c5b8-01dc65e11a6e",
+			"headers": "Content-Type: application/json\nclientId: 4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "clientId",
+					"value": "4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/api/v1/clients",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6939dacb-4558-14a6-ed1c-54fe38026c93",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Найти клиента по ID",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1609626457571,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8566c39e-8ef8-ecd0-bfa2-16fc1b66ed47",
+			"rawModeData": ""
+		}
+	]
+}

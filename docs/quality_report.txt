@@ -1,0 +1,26 @@
+Taxi.\app\validate.py:16: error: Too few arguments for "json_validate"
+        json_validate()
+        ^
+Taxi.\app\utilities\validate.py:16: error: Too few arguments for
+"json_validate"
+        json_validate()
+        ^
+Found 2 errors in 2 files (checked 8 source files)
+
+
+Taxi\config.py - A
+Taxi\manage.py - A
+Taxi\app\database.py - A
+Taxi\app\schema.py - A
+Taxi\app\validate.py - A
+Taxi\app\__init__.py - A
+Taxi\app\entity\controllers.py
+    ERROR: 'charmap' codec can't decode byte 0x98 in position 6256: character maps to <undefined>
+Taxi\app\entity\manage_clients.py - A
+Taxi\app\entity\manage_drivers.py - A
+Taxi\app\entity\manage_orders.py - A
+Taxi\app\entity\models.py
+    ERROR: 'charmap' codec can't decode byte 0x98 in position 473: character maps to <undefined>
+Taxi\app\utilities\validate.py - A
+Taxi\app\utilities\__init__.py - A
+Taxi\tests\test_api.py - A

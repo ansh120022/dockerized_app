@@ -1,0 +1,25 @@
+version: "3"
+services:
+
+  postgres:
+    image: postgres:11.3
+    command: ["postgres", "-c", "log_statement=all"]
+    ports:
+      - 8888:5432
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_password: "postgres"
+
+  app:
+    build: ./
+    container_name: dockerized_app
+    ports:
+      - 5050:5000
+    environment:
+      DB_NAME: "postgres"
+      DB_USER: "postgres"
+      DB_HOST: "postgres"
+      DB_PORT: "5432"
+    depends_on:
+      - postgres
